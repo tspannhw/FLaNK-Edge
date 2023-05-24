@@ -1,0 +1,175 @@
+{
+ "type": "record",
+ "name": "pisensor",
+ "namespace": "org.apache.nifi",
+ "fields": [
+  {
+   "name": "uuid",
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  {
+   "name": "ipaddress",
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  {
+   "name": "cputempf",
+   "type": [
+    "int",
+    "null"
+   ]
+  },
+  {
+   "name": "runtime",
+   "type": [
+    "int",
+    "null"
+   ]
+  },
+  {
+   "name": "host",
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  {
+   "name": "hostname",
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  {
+   "name": "macaddress",
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  {
+   "name": "endtime",
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  {
+   "name": "te",
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  {
+   "name": "cpu",
+   "type": [
+    "double",
+    "null"
+   ]
+  },
+  {
+   "name": "diskusage",
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  {
+   "name": "memory",
+   "type": [
+    "double",
+    "null"
+   ]
+  },
+  {
+   "name": "rowid",
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  {
+   "name": "systemtime",
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  {
+   "name": "ts",
+   "type": [
+    "int",
+    "null"
+   ]
+  },
+  {
+   "name": "starttime",
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  {
+   "name": "datetimestamp",
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  {
+   "name": "temperature",
+   "type": [
+    "double",
+    "null"
+   ]
+  },
+  {
+   "name": "humidity",
+   "type": [
+    "double",
+    "null"
+   ]
+  },
+  {
+   "name": "co2",
+   "type": [
+    "double",
+    "null"
+   ]
+  },
+  {
+   "name": "equivalentco2ppm",
+   "type": [
+    "double",
+    "null"
+   ]
+  },
+  {
+   "name": "totalvocppb",
+   "type": [
+    "double",
+    "null"
+   ]
+  },
+  {
+   "name": "pressure",
+   "type": [
+    "double",
+    "null"
+   ]
+  },
+  {
+   "name": "temperatureicp",
+   "type": [
+    "double",
+    "null"
+   ]
+  }
+ ]
+}
