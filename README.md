@@ -8,6 +8,8 @@ An example of FLaNK Edge
 ````
 curl -v --output flow.json http://nifi1:10090/efm/api/designer/rpi4thermal/flows/export
 
+curl -v --output rp400.json http://nifi1:10090/efm/api/designer/rp400/flows/export
+
 ````
 
 ### Output in flows is flow.json
