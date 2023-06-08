@@ -39,3 +39,41 @@ curl -v --output rp400.json http://nifi1:10090/efm/api/designer/rpi400/flows/exp
 100 1080k    0 1080k    0     0  15.6M      0 --:--:-- --:--:-- --:--:-- 16.7M
 * Connection #0 to host nifi1 left intact
 ````
+
+### Bootstrap.conf for c2
+
+````
+
+# MiNiFi Command & Control Configuration
+# C2 Properties
+# Enabling C2 Uncomment each of the following options
+c2.enable=true
+c2.rest.url=http://nifi1:10090/efm/api/c2-protocol/heartbeat
+c2.rest.url.ack=http://nifi1:10090/efm/api/c2-protocol/acknowledge
+# C2 Rest Path Properties
+# The base path of the C2 server's REST API, eg.: http://localhost/c2-server/api
+c2.rest.path.base=http://nifi1:10090/efm/api
+# Relative url of the C2 server's heartbeat endpoint, eg.: /heartbeat
+c2.rest.path.heartbeat=/c2-protocol/heartbeat
+# Relative url of the C2 server's acknowledge endpoint, eg.: /acknowledge
+c2.rest.path.acknowledge=/c2-protocol/acknowledge
+## c2 timeouts
+c2.rest.connectionTimeout=5 sec
+c2.rest.readTimeout=5 sec
+c2.rest.callTimeout=10 sec
+## heartbeat in milliseconds
+c2.agent.heartbeat.period=5000
+## define parameters about your agent
+c2.agent.class=macm1java
+c2.config.directory=./conf
+c2.runtime.manifest.identifier=minifi
+c2.runtime.type=minifi-java
+# Optional.  Defaults to a hardware based unique identifier
+#c2.agent.identifier=
+# If set to false heartbeat won't contain the manifest. Defaults to true.
+c2.full.heartbeat=false
+# Directory for storing assets downloaded via C2 update/asset command
+c2.asset.directory=./asset
+
+
+````
