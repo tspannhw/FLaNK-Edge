@@ -12,6 +12,12 @@ curl -v --output rp400.json http://nifi1:10090/efm/api/designer/rpi400/flows/exp
 
 curl -v --output rpi4weather.json http://nifi1:10090/efm/api/designer/rpi4weather/flows/export
 
+curl -v --output enviroplus.json http://nifi1:10090/efm/api/designer/enviroplus/flows/export
+
+
+# Generic Shell
+curl -v --output $1.json http://nifi1:10090/efm/api/designer/$1/flows/export
+
 ````
 
 ### Import Edge Flow Manager (CEM/EFM) Flow
