@@ -10,7 +10,23 @@ curl -v --output flow.json http://nifi1:10090/efm/api/designer/rpi4thermal/flows
 
 curl -v --output rp400.json http://nifi1:10090/efm/api/designer/rpi400/flows/export
 
+curl -v --output rpi4weather.json http://nifi1:10090/efm/api/designer/rpi4weather/flows/export
+
 ````
+
+### Import Edge Flow Manager (CEM/EFM) Flow
+
+
+
+````
+curl -X 'POST' 'http://nifi1:10090/efm/api/designer/rp4weather/flows/import' -H 'accept: application/json' -H 'Content-Type: application/json' -H 'X-XSRF-TOKEN: 7f2b530e-9ae5-4ee3-948e-5eee2dc6b36e' -d  @rpi4weather.json
+  
+
+{"identifier":"f94595fb-da35-4513-b658-6e21c7b3de15","agentClass":"rp4weather","rootProcessGroupIdentifier":"7620b7cd-f23c-4d77-af66-aa637910d286","created":1686239548463,"updated":1686241423524}
+
+````
+
+
 
 ### Output in flows is flow.json
 
