@@ -62,12 +62,53 @@ curl -X 'POST' 'http://nifi1:10090/efm/api/designer/rp4weather/flows/import' -H 
 * Connection #0 to host nifi1 left intact
 ````
 
-### Bootstrap.conf for c2
+### minifi.properties for c2 c++ rpi
+
+````
+## Enabling C2 Uncomment each of the following options
+## define those with missing options
+nifi.c2.enable=true
+## define protocol parameters
+## The default is RESTSender.
+## Alternatively, you may use CoapProtocol if that extension is built.
+nifi.c2.agent.protocol.class=RESTSender
+#nifi.c2.agent.protocol.class=CoapProtocol
+#nifi.c2.agent.coap.host=
+#nifi.c2.agent.coap.port=
+## base URL of the c2 server,
+## very likely the same base url of rest urls
+nifi.c2.flow.base.url=http://nifi1:10090/efm/api
+nifi.c2.rest.url=http://nifi1:10090/efm/api/c2-protocol/heartbeat
+nifi.c2.rest.url.ack=http://nifi1:10090/efm/api/c2-protocol/acknowledge
+nifi.c2.rest.ssl.context.service=
+nifi.c2.root.classes=DeviceInfoNode,AgentInformation,FlowInformation
+## Minimize heartbeat payload size by excluding agent manifest from the heartbeat
+nifi.c2.full.heartbeat=false
+## heartbeat twice a minute
+nifi.c2.agent.heartbeat.period=30 sec
+## define parameters about your agent
+nifi.c2.agent.class=rpi400c
+nifi.c2.agent.identifier=splootrpi400c
+## define metrics reported
+nifi.c2.root.class.definitions=metrics
+nifi.c2.root.class.definitions.metrics.name=metrics
+nifi.c2.root.class.definitions.metrics.metrics=runtimemetrics,loadmetrics,processorMetrics
+nifi.c2.root.class.definitions.metrics.metrics.runtimemetrics.name=RuntimeMetrics
+nifi.c2.root.class.definitions.metrics.metrics.runtimemetrics.classes=DeviceInfoNode,FlowInformation
+nifi.c2.root.class.definitions.metrics.metrics.loadmetrics.name=LoadMetrics
+nifi.c2.root.class.definitions.metrics.metrics.loadmetrics.classes=QueueMetrics,RepositoryMetrics
+nifi.c2.root.class.definitions.metrics.metrics.processorMetrics.name=ProcessorMetric
+nifi.c2.root.class.definitions.metrics.metrics.processorMetrics.classes=GetFileMetrics
+
+````
+
+### Bootstrap.conf for c2 java
 
 ````
 
 # MiNiFi Command & Control Configuration
 # C2 Properties
+
 # Enabling C2 Uncomment each of the following options
 c2.enable=true
 c2.rest.url=http://nifi1:10090/efm/api/c2-protocol/heartbeat
