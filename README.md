@@ -140,3 +140,8 @@ c2.asset.directory=./asset
 
 
 ````
+
+[https://docs.cloudera.com/cem/1.5.1/installation-minifi-cpp-agent/topics/cem-configure-minifi-cpp-agent.html](https://docs.cloudera.com/cem/1.5.1/installation-minifi-cpp-agent/topics/cem-configure-minifi-cpp-agent.html)
+
+
+[https://github.com/apache/nifi-minifi-cpp/blob/main/C2.md](https://github.com/apache/nifi-minifi-cpp/blob/main/C2.md)
