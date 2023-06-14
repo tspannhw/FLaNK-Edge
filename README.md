@@ -148,3 +148,6 @@ c2.asset.directory=./asset
 
 
 [https://community.cloudera.com/t5/Community-Articles/Building-and-Running-MiniFi-CPP-in-OrangePi-Zero/ta-p/247684](https://community.cloudera.com/t5/Community-Articles/Building-and-Running-MiniFi-CPP-in-OrangePi-Zero/ta-p/247684)
+
+
+[https://github.com/apache/nifi-minifi-cpp/blob/master/PROCESSORS.md#appendhostinfo](https://github.com/apache/nifi-minifi-cpp/blob/master/PROCESSORS.md#appendhostinfo)
