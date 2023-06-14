@@ -151,3 +151,6 @@ c2.asset.directory=./asset
 
 
 [https://github.com/apache/nifi-minifi-cpp/blob/master/PROCESSORS.md#appendhostinfo](https://github.com/apache/nifi-minifi-cpp/blob/master/PROCESSORS.md#appendhostinfo)
+
+
+[https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=65145325](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=65145325)
