@@ -154,3 +154,6 @@ c2.asset.directory=./asset
 
 
 [https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=65145325](https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=65145325)
+
+
+[https://www.datainmotion.dev/2019/05/cloudera-edge-management-introduction.html](https://www.datainmotion.dev/2019/05/cloudera-edge-management-introduction.html)
