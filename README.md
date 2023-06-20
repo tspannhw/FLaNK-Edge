@@ -10,10 +10,17 @@ curl -v --output flow.json http://nifi1:10090/efm/api/designer/rpi4thermal/flows
 
 curl -v --output rp400.json http://nifi1:10090/efm/api/designer/rpi400/flows/export
 
+curl -v --output rp4thermalcpp.json http://nifi1:10090/efm/api/designer/rp4thermalcpp/flows/export
+
 curl -v --output rpi4weather.json http://nifi1:10090/efm/api/designer/rpi4weather/flows/export
 
 curl -v --output enviroplus.json http://nifi1:10090/efm/api/designer/enviroplus/flows/export
 
+curl -v --output enviropluscpp.json http://nifi1:10090/efm/api/designer/enviropluscpp/flows/export
+
+curl -v --output mactimm1java.json http://nifi1:10090/efm/api/designer/mactimm1java/flows/export
+
+curl -v --output rpi400c.json http://nifi1:10090/efm/api/designer/rpi400c/flows/export
 
 # Generic Shell
 curl -v --output $1.json http://nifi1:10090/efm/api/designer/$1/flows/export
