@@ -82,6 +82,14 @@ curl -X 'POST' \
 
 ````
 
+### Result on MiNiFi
+
+````
+root@sploot:/opt/demo/minifi-1.23.04-b15# ls -lt asset
+total 136
+-rw-r--r-- 1 root root 136619 Jun 20 16:51 stormy.jpg
+
+````
 
 
 ### Output in flows is flow.json
