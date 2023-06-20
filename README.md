@@ -70,6 +70,16 @@ curl -X 'POST' \
 
 {"bulkOperation":{"id":"7bac07cd-28a9-4527-a46e-8081e73714ef","agentClass":"rpi400","state":"NEW"}}
 
+ content-encoding: gzip 
+ content-type: application/json 
+ date: Tue,20 Jun 2023 20:51:45 GMT 
+ expires: Thu,01 Jan 1970 00:00:00 GMT 
+ transfer-encoding: chunked 
+ vary: Accept-Encoding,User-Agent 
+ x-content-type-options: nosniff 
+ x-frame-options: DENY 
+ x-xss-protection: 1; mode=block
+
 ````
 
 
