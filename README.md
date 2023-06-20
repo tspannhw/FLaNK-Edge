@@ -4,6 +4,8 @@ An example of FLaNK Edge
 
 ### Download Edge Flow Manager (CEM/EFM) Flow
 
+Check out http://nifi1:10090/efm/swagger/
+
 
 ````
 curl -v --output flow.json http://nifi1:10090/efm/api/designer/rpi4thermal/flows/export
