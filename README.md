@@ -157,3 +157,9 @@ c2.asset.directory=./asset
 
 
 [https://www.datainmotion.dev/2019/05/cloudera-edge-management-introduction.html](https://www.datainmotion.dev/2019/05/cloudera-edge-management-introduction.html)
+
+
+
+[https://www.datainmotion.dev/2020/02/edgeai-jetson-nano-with-minifi-c-agent.html](https://www.datainmotion.dev/2020/02/edgeai-jetson-nano-with-minifi-c-agent.html)https://www.datainmotion.dev/2020/02/edgeai-jetson-nano-with-minifi-c-agent.html
+
+[https://github.com/apache/nifi-minifi-cpp/blob/main/PROCESSORS.md#appendhostinfo](https://github.com/apache/nifi-minifi-cpp/blob/main/PROCESSORS.md#appendhostinfo)https://github.com/apache/nifi-minifi-cpp/blob/main/PROCESSORS.md#appendhostinfo
