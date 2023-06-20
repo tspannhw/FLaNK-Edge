@@ -47,6 +47,7 @@ See:
 
 * https://docs.cloudera.com/cem/1.5.1/using-asset-push-command/topics/cem-using-asset-push-command.html
 * https://docs.cloudera.com/cem/1.5.1/using-asset-push-command/topics/cem-updating-agent-capability-asset-push.html
+* https://repository.cloudera.com/artifactory/repo/org/apache/nifi/
 
 
 ### payload.txt
