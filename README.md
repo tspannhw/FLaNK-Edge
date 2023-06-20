@@ -43,7 +43,11 @@ curl -X 'POST' 'http://nifi1:10090/efm/api/designer/rp4weather/flows/import' -H 
 
 ### Send assets to a device
 
-See: https://docs.cloudera.com/cem/1.5.1/using-asset-push-command/topics/cem-using-asset-push-command.html
+See: 
+
+* https://docs.cloudera.com/cem/1.5.1/using-asset-push-command/topics/cem-using-asset-push-command.html
+* https://docs.cloudera.com/cem/1.5.1/using-asset-push-command/topics/cem-updating-agent-capability-asset-push.html
+
 
 ### payload.txt
 
