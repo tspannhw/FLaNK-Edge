@@ -50,13 +50,27 @@ See: https://docs.cloudera.com/cem/1.5.1/using-asset-push-command/topics/cem-usi
 ````
 
 {
-    "assetFileName": "stormy.jpg"
+    "assetFileName": "stormy.jpg",
     "assetUri": "/opt/demo/stormy.jpg",
     "forceDownload": false
 }
 
 ````
 
+### Execute
+
+````
+
+curl -X 'POST' \
+  'http://nifi1:10090/efm/api/commands/rpi400/update-asset' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -H 'X-XSRF-TOKEN: 8b23c87e-17da-4b6d-adfd-0864c6deb1c3' \
+  -d '{"assetFileName": "stormy.jpg","assetUri":"/opt/demo/stormy.jpg","forceDownload": false}'
+
+{"bulkOperation":{"id":"7bac07cd-28a9-4527-a46e-8081e73714ef","agentClass":"rpi400","state":"NEW"}}
+
+````
 
 
 
