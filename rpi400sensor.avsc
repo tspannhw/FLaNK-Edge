@@ -1,6 +1,6 @@
 {
  "type": "record",
- "name": "edge-rpi400sensor",
+ "name": "rpi400sensor",
  "fields": [
   {
    "name": "uuid",
